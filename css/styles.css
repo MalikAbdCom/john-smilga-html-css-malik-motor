@@ -1,0 +1,312 @@
+/* ========
+google font
+=========*/
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
+/* ========
+color
+=========*/
+:root {
+  /* color */
+  --rich-black-fogra: #000814ff;
+  --oxford-blue: #001d3dff;
+  --prussian-blue: #003566ff;
+  --mikado-yellow: #ffc300ff;
+  --gold-web-golden: #ffd60aff;
+  /* color */
+  /* font */
+  --ff-primary: "catamaran", Sans-serif;
+  --ff-secondary: "Grand hotel", cursive;
+  /* font */
+  --transition: 0.3s linear all;
+  --letter-spacing: 0.25rem;
+  --radius-border: 0.5rem;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background: var(--rich-black-fogra);
+  color: white;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--letter-spacing);
+  text-transform: capitalize;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 0.825;
+  }
+}
+/* ========
+another global style
+=========*/
+.btn {
+  transition: var(--transition);
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: maroon;
+  color: white;
+  padding: 10px 20px;
+}
+.btn:hover,
+.btn:active {
+  background-color: white;
+  color: var(--rich-black-fogra);
+}
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+.judul-persection {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+.lebar-default {
+  width: 85vw;
+  margin: 0 auto;
+}
+.btn-dua {
+  background-color: var(--mikado-yellow);
+  color: var(--rich-black-fogra);
+}
+.btn-dua:hover {
+  outline: var(--mikado-yellow) solid 5px;
+}
+/* ========
+end of another global style
+=========*/
+/* ========
+header
+=========*/
+.header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(112, 14, 14, 0.3)),
+    url(../images/main-bcgnd.jpg) center/cover no-repeat fixed;
+  position: relative;
+  text-align: center;
+}
+.banner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-heading {
+  margin-bottom: 3rem;
+}
+.secondary-main-heading {
+  font-family: var(--ff-secondary);
+  color: var(--gold-web-golden);
+  margin-bottom: 2rem;
+  text-decoration: underline;
+  /* animation */
+}
+.button-banner {
+  display: inline-block;
+  outline: white solid 0.25rem;
+  outline-offset: 0.25rem;
+  letter-spacing: var(--letter-spacing);
+
+  /* animation */
+}
+.button-banner:hover,
+.button-banner:active {
+  outline: white solid 0.25rem;
+  outline-offset: 0;
+}
+/* ========
+end of header
+=========*/
+.content-devider {
+  height: 10px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--rich-black-fogra) 10%,
+    rgb(0, 71, 151) 50%,
+    var(--rich-black-fogra) 90%
+  );
+}
+/* ========
+skills
+=========*/
+
+.skill {
+  padding: 2rem 0;
+  text-align: center;
+  transition: var(--transition);
+}
+.skill-icon {
+  display: inline-block;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  transition: var(--transition);
+}
+.skill-text {
+  width: 17rem;
+  margin: 0 auto;
+}
+.skill:hover {
+  background: var(--gold-web-golden);
+  box-shadow: 0px 10px 0px 0px white;
+  color: var(--rich-black-fogra);
+}
+.skill:hover .skill-icon {
+  transform: translateY(-7px);
+}
+@media screen and (min-width: 500px) {
+  .skill {
+    width: 50%;
+    float: left;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .skill {
+    width: 25%;
+  }
+}
+/* end of skill================= */
+/* about===================== */
+.lebar-about {
+  margin: 1rem auto;
+}
+.gambar,
+.tentang {
+  margin: 2rem auto;
+}
+.gambar {
+  overflow: hidden;
+  max-width: 30rem;
+  border: var(--gold-web-golden) solid 8px;
+}
+.gambar-foto {
+  transition: var(--transition);
+  opacity: 0.5;
+}
+.gambar:hover .gambar-foto {
+  opacity: 1;
+  transform: scale(1.2);
+}
+.tentang {
+  margin: 2rem 0;
+}
+.para-expain {
+  max-width: 26rem;
+}
+@media screen and (min-width: 992px) {
+  .tengah,
+  .tentang {
+    width: 50%;
+    float: left;
+  }
+  .tentang {
+    padding: 0 2rem;
+  }
+}
+/* end of about===================== */
+/* product */
+.product {
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 1) 30%,
+    rgba(110, 0, 0, 1) 100%
+  );
+}
+.product-satu,
+.info-product {
+  padding-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+.gambar-product {
+  border-radius: var(--radius-border);
+  margin-bottom: 2rem;
+  height: 17rem;
+  object-fit: cover;
+}
+img + h4 {
+  font-size: 1.5rem;
+}
+.harga-product {
+  color: var(--gold-web-golden);
+}
+@media screen and (min-width: 768px) {
+  .product-satu {
+    float: left;
+    width: 50%;
+    padding-right: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .product-satu {
+    width: 33.33%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info-product,
+  .list-product {
+    float: left;
+  }
+  .info-product {
+    width: 30%;
+    padding: 2rem 1rem 0 0;
+  }
+  .list-product {
+    width: 70%;
+  }
+}
+/* end of product */
