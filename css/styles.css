@@ -124,9 +124,7 @@ another global style
   background-color: var(--mikado-yellow);
   color: var(--rich-black-fogra);
 }
-.btn-dua:hover {
-  outline: var(--mikado-yellow) solid 5px;
-}
+
 /* ========
 end of another global style
 =========*/
@@ -310,3 +308,48 @@ img + h4 {
   }
 }
 /* end of product */
+/* services  */
+.services {
+  background-color: maroon;
+}
+
+.services-title {
+  text-align: center;
+  margin-top: 1rem;
+}
+.gambar-it {
+  background-color: var(--oxford-blue);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.gambar-service {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 20rem;
+  object-fit: cover;
+}
+.gambar-it p {
+  padding-bottom: 2rem;
+}
+.gambar-it h4 {
+  font-size: 1.5rem;
+}
+.btn-sevices {
+  padding: 5px 20px;
+  border-radius: var(--radius-border);
+}
+@media screen and (min-width: 768px) {
+  .gambar-it {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .gambar-it {
+    width: 30%;
+    margin-right: 3.333%;
+  }
+}
