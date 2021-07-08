@@ -321,7 +321,6 @@ img + h4 {
   background-color: var(--oxford-blue);
   border-radius: 10px;
   margin-bottom: 2rem;
-  padding-bottom: 2rem;
 }
 .gambar-service {
   border-top-right-radius: 10px;
@@ -331,10 +330,10 @@ img + h4 {
 }
 .info-sevices {
   text-align: center;
-  padding: 2.2rem 0.7rem 2.2rem 0.7rem;
+  padding: 2.5rem 0;
 }
 .info-sevices p {
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
   max-width: 20rem;
 }
 .info-sevices h4 {
