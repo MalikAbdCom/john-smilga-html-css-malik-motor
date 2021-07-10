@@ -321,6 +321,11 @@ img + h4 {
   background-color: var(--oxford-blue);
   border-radius: 10px;
   margin-bottom: 2rem;
+  transition: var(--transition);
+}
+.gambar-it:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.75);
 }
 .gambar-service {
   border-top-right-radius: 10px;
