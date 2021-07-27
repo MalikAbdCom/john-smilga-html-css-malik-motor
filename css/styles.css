@@ -381,3 +381,66 @@ img + h4 {
 /* contact form */
 /* contact form */
 /* contact form */
+.contact-section {
+  background-color: var(--oxford-blue);
+  padding: 2rem 1.5rem;
+}
+.float-contact {
+  margin: 2rem 0;
+}
+@media screen and (min-width: 992px) {
+  .float-contact {
+    float: left;
+    width: 50%;
+  }
+}
+
+.contact-info {
+  margin-bottom: 1.5rem;
+}
+.judul-contact-info {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.isi-contact-info {
+  font-weight: 700;
+  color: var(--gold-web-golden);
+}
+.contact-form {
+  background-color: var(--rich-black-fogra);
+  border-radius: var(--radius-border);
+  text-align: center;
+  box-shadow: 0 0 15px 5px rgba(141, 74, 74, 0.15);
+  transition: var(--transition);
+  max-width: 35rem;
+}
+.contact-form:hover {
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.35);
+}
+.judul-form {
+  padding: 1rem 0;
+}
+.margin-form {
+  margin: 0 1rem 2rem 1rem;
+}
+.isi-form {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.75rem;
+  padding: 10px;
+  border-radius: var(--radius-border);
+}
+form [placeholder] {
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  font-family: var(--ff-primary);
+}
+
+.btn-form {
+  padding: 15px 0;
+  display: block;
+  width: 100%;
+  border-bottom-left-radius: var(--radius-border);
+  border-bottom-right-radius: var(--radius-border);
+  border: none;
+}
