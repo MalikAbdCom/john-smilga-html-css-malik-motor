@@ -128,6 +128,31 @@ another global style
 /* ========
 end of another global style
 =========*/
+/* navigation-------------------navigation */
+/* navigation-------------------navigation */
+/* navigation-------------------navigation */
+.nav-btn {
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 1rem 1.25rem;
+  z-index: 1;
+  animation: malik ease-in-out 2s infinite;
+  font-size: 2rem;
+}
+/* setelah @keyframe adalah nama yang bisa kita pakai sesuka hati karena mirip seperti variable yang bisa di pakai berulang kali dengan 'menyatakan' dan 'memanggil' */
+@keyframes malik {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* ========
 header
 =========*/
