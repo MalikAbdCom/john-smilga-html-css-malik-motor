@@ -469,3 +469,25 @@ form [placeholder] {
   border-bottom-right-radius: var(--radius-border);
   border: none;
 }
+/* footer-----------------footer */
+/* footer-----------------footer */
+/* footer-----------------footer */
+footer {
+  text-align: center;
+  margin: 2rem;
+}
+.icon-footer {
+  font-size: 2rem;
+  margin: 0.75rem;
+  color: white;
+}
+.icon-footer:hover {
+  color: var(--gold-web-golden);
+}
+.text-footer {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.company {
+  color: var(--mikado-yellow);
+}
