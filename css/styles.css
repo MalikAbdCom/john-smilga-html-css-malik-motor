@@ -224,6 +224,22 @@ header
 }
 .main-heading {
   margin-bottom: 3rem;
+  /* animation */
+  animation: dariKanan 2s ease-in-out;
+}
+@keyframes dariKanan {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(100px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .secondary-main-heading {
   font-family: var(--ff-secondary);
@@ -231,6 +247,21 @@ header
   margin-bottom: 2rem;
   text-decoration: underline;
   /* animation */
+  animation: dariKiri 2s ease-in-out;
+}
+@keyframes dariKiri {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-100px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .button-banner {
   display: inline-block;
@@ -239,6 +270,21 @@ header
   letter-spacing: var(--letter-spacing);
 
   /* animation */
+  animation: muncul 2s ease-in-out;
+}
+@keyframes muncul {
+  0% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.7);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 .button-banner:hover,
 .button-banner:active {
